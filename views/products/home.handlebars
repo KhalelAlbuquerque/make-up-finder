@@ -1,0 +1,30 @@
+<div class="apresentation">
+
+    <h1>A maquiagem revela a beleza!</h1>
+    <h2>Busque o que procura conosco!</h2>
+
+    <div class="search-form">
+        <form action="/">
+            <input type="text" name="search" placeholder="Digite o que procura...">
+            <input type="submit" value="Pesquisar">
+        </form>
+    </div>
+
+</div>
+
+<div class="products-container-home">
+
+    {{#each items}}
+        {{#with this}}
+
+            <div class="product-item-home">
+                <img src="{{image_link}}" alt="IMG {{name}}">
+                <p><span class="item-name-span">{{name}}</span></p>
+                <p><span class="item-price-span">{{price}} {{currency}}</span></p>
+                <a href="/view/{{id}}"></a>
+            </div>
+
+        {{/with}}
+    {{/each}}
+
+</div>
