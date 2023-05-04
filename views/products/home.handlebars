@@ -20,11 +20,12 @@
             <div class="product-item-home">
                 <img src="{{image_link}}" alt="IMG {{name}}">
                 <p><span class="item-name-span">{{name}}</span></p>
-                <p><span class="item-price-span">{{price}} {{currency}}</span></p>
-                <a href="/view/{{id}}"></a>
+                <p><span class="item-price-span">${{price}}</span></p>
+                <a href="/view/{{id}}">Ver produto</a>
             </div>
 
         {{/with}}
     {{/each}}
 
+    <a class="view-all" href="#">Ver tudo</a>
 </div>
